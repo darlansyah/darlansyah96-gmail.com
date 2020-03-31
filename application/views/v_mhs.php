@@ -42,6 +42,7 @@
           <?= $mhs['alamat'] ?>
         </td>
         <td>
+             <a href="<?= base_url().'mahasiswa/detail/'.$mhs['id'] ?>"> Detail </a> ||
              <a href="<?= base_url().'mahasiswa/edit/'.$mhs['id'] ?>"> Edit </a> ||
              <a href="<?= base_url().'mahasiswa/hapus/'.$mhs['id'] ?>"> Hapus </a>
           </td>

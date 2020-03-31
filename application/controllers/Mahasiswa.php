@@ -9,8 +9,6 @@ class Mahasiswa extends CI_Controller{
     $this->load->view('v_mhs',$data);
   }
   public function tambah_aksi(){
-    $this->load->model('m_mhs');
-
     // cara pertama
     // $post = $this->input->post();
     // end  cara pertama
@@ -62,6 +60,16 @@ class Mahasiswa extends CI_Controller{
     $this->m_mhs->hapus_data($where,'tbl_mhs');
     redirect('mahasiswa/index');
   }
+  public function detail($id){
+    $this->load->model('m_mhs');
+    $detail = $this->m_mhs->detail_data($id);
+    // var_dump($detail);
+    // die;
+    $data['detail'] = $detail;
+
+    $this->load->view('v_mhs_detail',$data);
+  }
+
 
 
 

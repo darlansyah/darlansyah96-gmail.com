@@ -12,7 +12,7 @@
     <br/>
     <input type="text" name="nim" value="<?=$mahasiswa[0]['nim'] ?>" placeholder="Masukkan NIM">
     <br/>
-    <textarea name="alamat"><?=$mahasiswa[0]['nama'] ?> </textarea>
+    <textarea name="alamat"><?=$mahasiswa[0]['alamat'] ?> </textarea>
     <br/>
     <button type="submit"> Update </button>
   </form>

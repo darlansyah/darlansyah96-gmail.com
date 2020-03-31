@@ -24,6 +24,10 @@ class m_mhs extends CI_Model{
     $this->db->update($table,$data);
   }
 
+  public function detail_data($id = null){
+    $query = $this->db->get_where('tbl_mhs',array('id'=>$id))->result_array();
+    return $query;
+  }
 }
 
  ?>
